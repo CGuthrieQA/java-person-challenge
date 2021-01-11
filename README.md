@@ -240,7 +240,7 @@ public List<Duck> duckList = new ArrayList<>();
 		Collections.sort(duckList, new Comparator<Duck>() {
 			
 			public int compare(Duck a, Duck b) {
-				return a.toString().compareTo(b.toString());
+				return a.name.compareTo(b.name);
 			}
 			
 		});
