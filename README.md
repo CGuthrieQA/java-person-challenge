@@ -229,4 +229,23 @@ public List<Duck> duckList = new ArrayList<>();
 	3. Create a method which sorts the Duck List by name, and prints the whole list (HINT: use the .sort() List method)
 
 	```java
+
+	import java.util.Collections;
+
+	...
+
+	
+	public void duckSort() {
+		
+		Collections.sort(duckList, new Comparator<Duck>() {
+			
+			public int compare(Duck a, Duck b) {
+				return a.toString().compareTo(b.toString());
+			}
+			
+		});
+		
+		System.out.println(duckList);
+		
+	}
 	```
