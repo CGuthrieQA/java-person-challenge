@@ -231,10 +231,10 @@ public List<Duck> duckList = new ArrayList<>();
 	```java
 
 	import java.util.Collections;
+	import java.util.Comparator;
 
 	...
 
-	
 	public void duckSort() {
 		
 		Collections.sort(duckList, new Comparator<Duck>() {
