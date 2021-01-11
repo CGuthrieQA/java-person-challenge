@@ -49,9 +49,9 @@ public class Person {
 	@Override
 	public String toString() {
 		return String.format(
-			"[name : " + '"' + name + '"' + 
-			", age : " + '"' + age + '"' + 
-			", jobTitle : " + '"' + jobTitle + '"' + "],");
+			" name : " + '"' + name + '"' + 
+			" / age : " + '"' + age + '"' + 
+			" / jobTitle : " + '"' + jobTitle + '"' + " ");
 	}
 	
 }

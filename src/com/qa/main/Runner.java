@@ -13,7 +13,6 @@ public class Runner {
 //		Person1.setAge(33);
 //		Person1.setJobTitle("Head of doing things");
 
-
 		Person p1 = new Person("Hugh Mann", 33, "Head of doing things");
 		
 		//System.out.println(p1.toString());
@@ -28,8 +27,23 @@ public class Runner {
 		lip.arrayAdd(p2);
 		lip.arrayAdd(p3);
 		
+		//System.out.println(lip.personList);
+		
 		//lip.searchName("Sally Jones");	
-		lip.streamPeople();
+		//lip.streamPeople();
+
+		Duck d1 = new Duck("Sophie", true, 3);
+		Duck d2 = new Duck("Bob", true, 5);
+		Duck d3 = new Duck("Carving", false, 1);
+		
+		d1.duckList.add(d1);
+		d1.duckList.add(d2);
+		d1.duckList.add(d3);
+		
+		d1.printDuckList();
+		d1.mallardCheck();
+		d1.duckSort();
+		
 	}
 	
 }

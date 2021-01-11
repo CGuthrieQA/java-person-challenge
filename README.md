@@ -145,3 +145,88 @@ public void streamPeople() {
 	
 }
 ```
+
+## Duck Extension
+
+1. Create a Duck class which models name, isAMallard, and any variables you wish. (Make sure to encapsulate them!)
+
+```java
+public class Duck {
+	
+	// variables
+	private String name;
+	private boolean isAMallard;
+	private int weight;
+	
+	// constructor -> overloading
+	
+	public Duck(String name, boolean isAMallard, int weight) {
+		this.name = name;
+		this.isAMallard = isAMallard;
+		this.weight = weight;
+	}
+
+	// getters and setters
+	
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public boolean isAMallard() {
+		return isAMallard;
+	}
+	public void setAMallard(boolean isAMallard) {
+		this.isAMallard = isAMallard;
+	}
+	public int getWeight() {
+		return weight;
+	}
+	public void setWeight(int weight) {
+		this.weight = weight;
+	}
+
+}
+```
+
+2. WITHOUT making a new class, create a List<> implementation for your Duck objects
+
+```java
+import java.util.List;
+
+...
+
+public List<Duck> duckList = new ArrayList<>();
+```
+
+3. Create methods to print out:
+	1. the entire Duck List
+
+	```java
+	public void printDuckList() {
+		System.out.println(duckList);
+	}
+	```
+
+	2. every Duck object that is a mallard
+
+	```java
+	public void mallardCheck() {
+		
+		for ( Duck i : duckList) {
+			
+			if (i.isAMallard == true) {
+				System.out.println(i);
+			}
+			
+		}
+		
+	}
+	```
+
+
+	3. Create a method which sorts the Duck List by name, and prints the whole list (HINT: use the .sort() List method)
+
+	```java
+	```
