@@ -12,6 +12,14 @@ public class Person {
 	private String name;
 	private int age;
 	private String jobTitle;
+
+	// constructor -> overloading
+	
+	public Person(String name, int age, String jobTitle) {
+		this.name = name;
+		this.age = age;
+		this.jobTitle = jobTitle;
+	}
 	
 	// getters
 	
@@ -53,7 +61,10 @@ public class Person {
 
 @Override
 public String toString() {
-	return String.format("Name: " + name + "\r\nAge: " + age + "\r\nJob Title: " + jobTitle);
+	return String.format(
+		"[name : " + '"' + name + '"' + 
+		", age : " + '"' + age + '"' + 
+		", jobTitle : " + '"' + jobTitle + '"' + "],");
 }
 ```
 
@@ -64,20 +75,11 @@ public class Runner {
 	
 	public static void main(String[] args) {
 
-		Person Person1 = new Person();
-		Person1.setName("Hugh Mann");
-		Person1.setAge(33);
-		Person1.setJobTitle("Head of doing things");
-
-		Person Person2 = new Person();
-		Person2.setName("Sally Jones");
-		Person2.setAge(27);
-		Person2.setJobTitle("THE BOSS");
+		Person p1 = new Person("Hugh Mann", 33, "Head of doing things");
 		
-		Person Person3 = new Person();
-		Person3.setName("Hacker Man");
-		Person3.setAge(42);
-		Person3.setJobTitle("master coder");
+		Person p2 = new Person("Sally Jones", 27, "THE BOSS");
+		
+		Person p3 = new Person("Hacker Man", 42, "master coder");
 
 	}
 	
@@ -105,9 +107,9 @@ public class ListPeople {
 ```java
 ListPeople lip = new ListPeople();
 		
-lip.arrayAdd(Person1);
-lip.arrayAdd(Person2);
-lip.arrayAdd(Person3);
+lip.arrayAdd(p1);
+lip.arrayAdd(p2);
+lip.arrayAdd(p3);
 ```
 
 
@@ -119,7 +121,7 @@ public void searchName(String name) {
 	for ( Person i : personList) {
 		
 		if (i.getName().equals(name)) {
-			System.out.println("name found");
+			System.out.println(i);
 		}
 		
 	}
@@ -130,7 +132,6 @@ public void searchName(String name) {
 ```java
 lip.searchName("Sally Jones");
 ```
-
 
 6. Use a stream to output all of your people to the console.
 

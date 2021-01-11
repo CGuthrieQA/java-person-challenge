@@ -8,6 +8,14 @@ public class Person {
 	private int age;
 	private String jobTitle;
 	
+	// constructor -> overloading
+	
+	public Person(String name, int age, String jobTitle) {
+		this.name = name;
+		this.age = age;
+		this.jobTitle = jobTitle;
+	}
+	
 	// getters
 	
 	public String getName() {
@@ -40,7 +48,10 @@ public class Person {
 	
 	@Override
 	public String toString() {
-		return String.format("[\r\nname : " + '"' + name + '"' + ",\r\nage : " + '"' + age + '"' + ",\r\njobTitle : " + '"' + jobTitle + '"' + "\r\n],");
+		return String.format(
+			"[name : " + '"' + name + '"' + 
+			", age : " + '"' + age + '"' + 
+			", jobTitle : " + '"' + jobTitle + '"' + "],");
 	}
 	
 }
