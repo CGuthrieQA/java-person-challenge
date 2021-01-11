@@ -4,16 +4,16 @@ public class Runner {
 	
 	public static void main(String[] args) {
 		
-		Person per = new Person();
+		//Person per = new Person();
 		
-		System.out.println(per.toString());
+		//System.out.println(per.toString());
 		
 		Person Person1 = new Person();
 		Person1.setName("Hugh Mann");
 		Person1.setAge(33);
 		Person1.setJobTitle("Head of doing things");
 
-		System.out.println(Person1.toString());
+		//System.out.println(Person1.toString());
 		
 		Person Person2 = new Person();
 		Person2.setName("Sally Jones");
@@ -31,10 +31,8 @@ public class Runner {
 		lip.arrayAdd(Person2);
 		lip.arrayAdd(Person3);
 		
-
-		lip.searchName("Sally Jones");
-		
-		
+		//lip.searchName("Sally Jones");	
+		lip.streamPeople();
 	}
 	
 }

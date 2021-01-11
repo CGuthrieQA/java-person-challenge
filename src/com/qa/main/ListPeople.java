@@ -18,11 +18,19 @@ public class ListPeople {
 		for ( Person i : personList) {
 			
 			if (i.getName().equals(name)) {
-				System.out.println("name found");
+				System.out.println(i);
 			}
 			
 		}
 		
 	}
+	
+	public void streamPeople() {
+		
+		personList.stream()
+			.forEach( Person -> System.out.println(Person) );
+		
+	}
+	
 	
 }

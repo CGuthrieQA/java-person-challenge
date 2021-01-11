@@ -40,7 +40,7 @@ public class Person {
 	
 	@Override
 	public String toString() {
-		return String.format("Name: " + name + "\r\nAge: " + age + "\r\nJob Title: " + jobTitle);
+		return String.format("[\r\nname : " + '"' + name + '"' + ",\r\nage : " + '"' + age + '"' + ",\r\njobTitle : " + '"' + jobTitle + '"' + "\r\n],");
 	}
 	
 }

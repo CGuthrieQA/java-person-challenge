@@ -135,3 +135,12 @@ lip.searchName("Sally Jones");
 6. Use a stream to output all of your people to the console.
 
 	HINT: you can iterate through collections using streams with forEach().
+
+```java
+public void streamPeople() {
+		
+	personList.stream()
+		.forEach( Person -> System.out.println(Person) );
+	
+}
+```
