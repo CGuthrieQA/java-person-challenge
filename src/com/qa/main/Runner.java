@@ -31,18 +31,20 @@ public class Runner {
 		
 		//lip.searchName("Sally Jones");	
 		//lip.streamPeople();
+		
+		DuckManager ducks = new DuckManager();
 
 		Duck d1 = new Duck("Sophie", true, 3);
 		Duck d2 = new Duck("Bob", true, 5);
 		Duck d3 = new Duck("Carving", false, 1);
 		
-		d1.duckList.add(d1);
-		d1.duckList.add(d2);
-		d1.duckList.add(d3);
+		ducks.duckList.add(d1);
+		ducks.duckList.add(d2);
+		ducks.duckList.add(d3);
 		
-		d1.printDuckList();
-		d1.mallardCheck();
-		d1.duckSort();
+		ducks.printDuckList();
+		ducks.mallardCheck();
+		ducks.duckSort();
 		
 	}
 	

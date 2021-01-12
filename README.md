@@ -1,5 +1,9 @@
 # Person Challenge
 
+## N.B:
+
+I have updated the files to move the list of ducks into their own class
+
 ## Tasks
 
 1. Create a Person class modelling name, age and job title variables.
